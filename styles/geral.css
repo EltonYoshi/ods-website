@@ -4,8 +4,9 @@
     --font-family-primary:'Montserrat', sans-serif;
     --font-family-secundary:'Hammersmith One', sans-serif;
     --color-primary: rgb(7, 1, 26);
+    --color-secundary: white;
+    --color-tertiary: rgb(1, 236, 185);
 }
-
 /*=== scrollbar style ===*/
 *::-webkit-scrollbar {
     width: 10px;
@@ -29,6 +30,7 @@ body{
     color: var(--font-color-primary);
     font-family: var(--font-family-primary);
     background-color: var(--color-primary);
+    box-sizing: border-box;
 }
 li{
     list-style: none;
@@ -37,9 +39,10 @@ a{
     text-decoration: none;
 }
 header{
+    position: absolute;
     z-index: 5;
-    position: fixed;
-    width: 100vw;
+    width: 97vw;
+    height: 5vh;
     padding: 15px;
     backdrop-filter: blur(8px);
 }
@@ -104,7 +107,7 @@ header{
     font-weight: 600;
 }
 #intro-h1-color{
-    color: rgb(1, 236, 185);
+    color: var(--color-tertiary);
 }
 .intro-h2{
     text-align: left;
@@ -128,5 +131,53 @@ padding-right: 100px;
 
 /*=== objectives ===*/
 .objs{
-    padding: 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
+.obj-h1{
+    font-size: 3em;
+    padding: 35px;
+    color: var(--color-secundary);
+}
+.cards{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 37vh;
+    padding: 30px 30px 70px 30px;
+    margin: 40px 40px 80px 40px;
+    color: var(--color-primary);
+    background-color: var(--color-secundary);
+    border-radius: 24px;
+}
+
+.card img{
+    width: 20vw;
+    height: 250px;
+    object-fit: cover;
+    border-radius: inherit;
+    margin-top: -70px;
+    margin-bottom: 30px;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.185);
+}
+
+.card-text h2{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.card-text p{
+    font-size: 0.9em;
+}
+
+/*=== objectives ===*/
