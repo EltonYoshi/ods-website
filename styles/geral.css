@@ -67,9 +67,14 @@ header{
 }
 .iten{
     padding: 12px;
-    border: solid 1px;
+    border: solid 2px;
     border-radius: 15px;
     color: var(--font-color-primary)
+
+}
+.iten:hover{
+    border: solid 2px rgb(235, 235, 235);
+    color: rgb(235, 235, 235);
 }
 
 
@@ -92,9 +97,6 @@ header{
     background: linear-gradient(rgba(6, 31, 54, 0.904),  rgba(3, 85, 81, 0.945));
     background-size: cover ;
 }
-
-
-
 .intro-img-container, .intro-text-container {
     padding: 10px 40px 10px 20px;
     display: flex;
@@ -132,6 +134,14 @@ padding-right: 100px;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.24);
     background-color: var(--color-primary);
     color: var(--font-color-primary);
+    transition: padding .3s;
+}
+.intro-btn:hover{
+    cursor: pointer;
+    transition: color .3s;
+    background-color: rgb(8, 1, 32);
+    transition: padding .3s;
+    padding: 17px 22px 17px 22px;
 }
 
 /*=== objectives ===*/
@@ -232,6 +242,38 @@ padding-right: 100px;
     color: var(--color-primary);
     font-size: 8em;
 }
+
+/*=== footer ===*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    height: 20%;
+    background-color: rgb(4, 2, 14);
+}
+.copy{
+    padding: 0 50px 0 50px;
+    width: 80vh;
+}
+.copy p{
+    margin-top: 10px;
+}
+.social{
+    margin: 0 20px 0 0;
+}
+
+.icons i {
+    margin: 10px;
+    font-size: 3em;
+
+}
+.icons i:hover{
+    transition: color .3s;
+    cursor: pointer;
+    color: rgb(209, 209, 209);
+}
+
+
 
 
 /*=== media queries ===*/
