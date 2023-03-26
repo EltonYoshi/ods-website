@@ -26,7 +26,9 @@
     border: 0;
     scrollbar-width: thin; 
 }
+
 body{
+    justify-content: center;
     color: var(--font-color-primary);
     font-family: var(--font-family-primary);
     background-color: var(--color-primary);
@@ -90,6 +92,9 @@ header{
     background: linear-gradient(rgba(6, 31, 54, 0.904),  rgba(3, 85, 81, 0.945));
     background-size: cover ;
 }
+
+
+
 .intro-img-container, .intro-text-container {
     padding: 10px 40px 10px 20px;
     display: flex;
@@ -154,7 +159,9 @@ padding-right: 100px;
     align-items: center;
     flex-direction: column;
     width: 20vw;
-    height: 37vh;
+    min-width: 250px;
+    max-width: 350px;
+    height: 350px;
     padding: 30px 30px 70px 30px;
     margin: 40px 40px 80px 40px;
     color: var(--color-primary);
@@ -164,6 +171,8 @@ padding-right: 100px;
 
 .card img{
     width: 20vw;
+    min-width: 250px;
+    max-width: 350px;
     height: 250px;
     object-fit: cover;
     border-radius: inherit;
@@ -180,4 +189,54 @@ padding-right: 100px;
     font-size: 0.9em;
 }
 
-/*=== objectives ===*/
+/*=== quotes ===*/
+
+.quote-card{
+    display: flex;
+    background-color: white;
+}
+.quote-card img{
+    width: 50vw;
+    height: 50vh;
+    margin-left: -3px;
+    object-fit: cover;
+
+}
+.quotes-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-primary);
+    padding: 50px;
+    
+}
+.quotes-text p{
+    font-size: 1.7em;
+}
+
+.quotes-text h3{
+    background-image:linear-gradient(rgba(19, 62, 102, 0.904),  rgba(3, 85, 81, 0.945));
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: var(--color-primary);
+    font-size: 1.3em;
+}
+.quotes-text i{
+    margin-top: -100px;
+    padding: 15px;
+    background-image:linear-gradient(rgba(19, 62, 102, 0.904),  rgba(3, 85, 81, 0.945));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--color-primary);
+    font-size: 8em;
+}
+
+
+/*=== media queries ===*/
+@media(min-width:1900px){
+    .intro, .objs{
+        padding: 0 450px 0 450px;
+    }
+}
